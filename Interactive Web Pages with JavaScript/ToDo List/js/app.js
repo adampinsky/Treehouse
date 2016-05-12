@@ -1,6 +1,3 @@
-//Problem: User interaction doesn't provide desired results.
-//Solution: Add interactivty so the user can manage daily tasks.
-
 var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
@@ -125,6 +122,7 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
   checkBox.onchange = checkBoxEventHandler;
 }
 
+//TODO: ajax request
 var ajaxRequest = function() {
   console.log("AJAX request");
 }
